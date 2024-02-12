@@ -1,0 +1,153 @@
+.instruction {
+    font-size: 13px;
+    font-weight: 600;
+    color: green;
+}
+
+.required {
+    font-size: 13px;
+    color: #D00;
+}
+
+.error {
+    font-size: 11px;
+    font-weight: 600;
+    color: #D00;
+    letter-spacing: 1px;
+    background-color: transparent;
+}
+
+.has-float-label {
+    margin-top: 5px;
+    display: block;
+    position: relative
+}
+
+.has-float-label label,
+.has-float-label>span {
+    position: absolute;
+    cursor: text;
+    font-size: 100%;
+    font-weight: bold;
+    color: var(--font-color)!important;
+    opacity: 1;
+    -webkit-transition: all .2s;
+    transition: all .2s;
+    top: -.5em;
+    left: .75rem;
+    z-index: 3;
+    line-height: 1;
+    padding: 0 2px;
+    background: rgb(226, 247, 247);
+    /* background: var(--required-bgcolor); */
+}
+
+.has-float-label>select{
+    margin-top: 2px;
+}
+
+.has-float-label label::after,
+.has-float-label>span::after {
+    content: " ";
+    display: block;
+    position: absolute;
+    background: rgb(226, 247, 247);
+    /* background: blue; */
+    background: inherit;
+    height: 2px;
+    top: 50%;
+    left: -.2em;
+    right: -.2em;
+    z-index: -1
+}
+
+.has-float-label .form-control::-webkit-input-placeholder {
+    opacity: 1;
+    -webkit-transition: all .2s;
+    transition: all .2s;
+    background-color: transparent;
+}
+
+.has-float-label .form-control::-moz-placeholder {
+    opacity: 1;
+    transition: all .2s;
+    background-color: transparent;
+}
+
+.has-float-label .form-control:-ms-input-placeholder {
+    opacity: 1;
+    transition: all .2s;
+    background-color: transparent;
+}
+
+.has-float-label .form-control::placeholder {
+    opacity: 1;
+    -webkit-transition: all .2s;
+    transition: all .2s;
+}
+
+.has-float-label .form-control:placeholder-shown:not(:focus)::-webkit-input-placeholder {
+    opacity: 0;
+    background: var(--font-focus);
+}
+
+.has-float-label .form-control:placeholder-shown:not(:focus)::-moz-placeholder {
+    opacity: 0;
+    background: var(---font-focus);
+}
+
+.has-float-label .form-control:placeholder-shown:not(:focus):-ms-input-placeholder {
+    opacity: 0;
+    background: var(--font-focus);
+}
+
+.has-float-label .form-control:placeholder-shown:not(:focus)::placeholder {
+    opacity: 0;
+    background: var(--font-focus);
+}
+
+.has-float-label .form-control:placeholder-shown:not(:focus)+* {
+    font-size: 100%;
+    color: var(--font-focus);
+    background: var(--font-focus);
+    opacity: 1;
+    top: .3em
+}
+
+.input-group .has-float-label {
+    -webkit-box-flex: 1;
+    -webkit-flex-grow: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    margin-top: 3px;
+    margin-bottom: 0;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center
+}
+
+.has-float-label .form-control:placeholder-shown:not(:focus)+* {    
+    margin-top: 6px;
+    background: var(--required-bgcolor);
+}
+
+
+/* to make the required form control more visible making the border width bolder */
+.has-float-label .form-control:disabled {
+    /* border-width: 2px; */
+    background: var(--disable-bgcolor)!important;
+}
+.has-float-label .form-control:required {
+    /* border-width: 2px; */
+    background: var(--required-bgcolor);
+}

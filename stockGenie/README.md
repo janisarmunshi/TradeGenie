@@ -1,0 +1,2 @@
+# stockGenie
+Stock Genie

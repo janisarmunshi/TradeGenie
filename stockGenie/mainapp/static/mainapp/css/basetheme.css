@@ -1,0 +1,41 @@
+.basetheme {
+    /* padding-left: 20px; */
+    padding-left: 20px;
+    padding-right: 20px;
+    float: left;
+    width: 100%;       
+}
+.form-row{
+    margin-top: 10px;
+}
+body {
+    background-color: rgb(255, 255, 255);
+    margin-right: 3px;
+  }
+
+.form-group{
+    margin-bottom: 3px;
+}
+/* .navbar-light{
+
+} */
+#btnOffcanvas{
+    position: fixed;
+    bottom: 50%;
+    right: 10px;  
+    width: 12px;  
+}
+
+.wrapper {
+    text-align: center;
+}
+
+.btn-pk-list {
+    position: absolute;
+    top: 50%;
+    right: 0px;
+    transform: rotate(-90deg);
+    margin: 0px;
+    padding: 4px;
+    
+}

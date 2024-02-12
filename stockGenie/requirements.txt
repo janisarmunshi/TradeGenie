@@ -1,0 +1,6 @@
+django-environ==0.10.0
+Django==5.0
+psycopg2==2.9.9
+djangorestframework==3.14.0
+pyjwt==2.6.0
+gspread==5.11.1
